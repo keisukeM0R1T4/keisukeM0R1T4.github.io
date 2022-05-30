@@ -27,13 +27,10 @@
      
       <div class="btn-wrapper">
          <script>
-    // 1.DOM操作する対象の選択
 
-          function clickLink () {
-          //[a]タグを取得
-          const a = document.getElementById ( "test" ) ;
-          //文字列を設定
-          a.textContent = "thank you" ;
+          document.getElementById("btn-wrapper").onclick = function() {
+          document.getElementById("test").innerHTML = "クリックされた！";
+          };
         </script>
         <a href="javascript:clickLink()" class="btn signup" id="test">新規登録はこちら</a>
         <p>or</p>
